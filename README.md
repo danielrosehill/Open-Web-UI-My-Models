@@ -12,6 +12,16 @@ As AI tools have evolved at such an incredible pace, we've seen some emerging st
 
 The emerging norm is that there isn't a hard need to ringfence these type of LLM tools from other ones. Rather by adding a system prompt and a RAG pipeline to a standard "off the shelf" LLM (accessed via its API), the same intended behavior can be achieved. 
 
+## Notes About The Config Texts
+
+Because writing system prompts can be a long process, I've switched to using voice dictation for this purpose over the past few months. I typically use Open AI Whisper to dictate my configuration prompts. While this generally works pretty well and saves a lot of time over writing out longer prompts, it's not a perfect process. 
+
+For one, it probably tends towards encouraging writing longer configurations that are necessary, which will increase the token usage. Secondly, I don't always catch the typos. And even when I find capitalization, if I don't think that it's going to degrade the utility of the system prompts, sometimes I don't have time to fix them. So if you're thinking about using any of these, it's worth giving them a proofread and an edit before adding them to your own instance.
+
+At the moment, I'm most focused on getting these useful configurations out the door and working on different platforms. Over time, however, I do iterate and improve upon the most useful ones. But a lot of the configurations are best understood as more experimentary to understand What kind of LLM assistants can be created and how best to write the system prompts.
+
+I frequently create assistants which are backed by knowledge stores, but, for obvious reasons, I can't always share the context data. For example, I have one medication tracking assistant which has my daily medication list as its contextual knowledge. I might share these without the context data and try to rewrite them in a way that they might be adapted for another user. 
+
 
 ## Author
 
