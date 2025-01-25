@@ -1,0 +1,3 @@
+[submodule "source-model-library"]
+	path = source-model-library
+	url = https://github.com/danielrosehill/My-LLM-Assistants
