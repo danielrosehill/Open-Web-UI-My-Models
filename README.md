@@ -1,4 +1,4 @@
-#  Open Web UI Assistant Library (Jan 2025)
+#  Open Web UI Assistant & Custom Model Library (Jan 2025)
 
 25-Jan-25
 
@@ -8,11 +8,25 @@ The purpose of this repository is to share configurations for custom models that
 
 As an upstream source for the configurations, this repository has my public assistants repository as a sub module. 
 
+## Assistants? Custom models? A word about nomenclature
+
 As AI tools have evolved at such an incredible pace, we've seen some emerging standards for how to configure what have typically been provided as assistants on dedicated platforms (say, OpenAI Assistants API).
 
 The emerging norm is that there isn't a hard need to ringfence these type of LLM tools from other ones. Rather by adding a system prompt and a RAG pipeline to a standard "off the shelf" LLM (accessed via its API), the same intended behavior can be achieved. 
 
-## Notes About The Config Texts
+## General purpose LLM mimics
+
+Accessing large language models by APIs is typically quite a different experience from using them on their consumer platforms. The models that are accessed in this manner have no system prompt attached to them to modify and guide their response to the user.
+
+In addition to creating custom models, I also create a few "LLM mimics" - These involve pairing large language models with their popular consumer platforms in order to try to achieve a somewhat comparable user experience while maintaining the utility of API access.
+
+Rarely, providers have actually shared their system prompts. Consider the case of Anthropic which [releases this publicly](https://docs.anthropic.com/en/release-notes/system-prompts). But other providers have taken a much more guarded view, regarding them as trade secrets. 
+
+In the former case (Anthropic) It should be possible to recreate Claude with good precision by simply Creating a model that uses the specific API and the relevant system prompt.
+
+In cases where the system prompts are not publicly disclosed, however, users have to rely upon their imagination, creativity, and perhaps in some cases even reverse engineering to attempt to configure ones that provide replicas of sorts.
+
+## Notes About The Config Texts (For Assistants)
 
 Because writing system prompts can be a long process, I've switched to using voice dictation for this purpose over the past few months. I typically use Open AI Whisper to dictate my configuration prompts. While this generally works pretty well and saves a lot of time over writing out longer prompts, it's not a perfect process. 
 
